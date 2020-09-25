@@ -73,6 +73,8 @@ For example,
 >>> col.update_many({"newkey":"somenewvalue"}, {"newkey":"anothernewvalue"})
 ```
 
+# Unfinished
+```py
 	def find_all()
 	def find_many(query)
 	def find_one(query)
@@ -80,7 +82,9 @@ For example,
 	def delete_many(query)
 	def delete_all()
 	def drop()
-
+```
+```py
 class Sort:
 	def by_asc(key)
 	def by_desc(key)
+```
