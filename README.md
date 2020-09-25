@@ -74,7 +74,7 @@ For example,
 ```
 
 # Unfinished
-```py
+```
 	method find_all()
 	method find_many(query)
 	method find_one(query)
@@ -83,7 +83,7 @@ For example,
 	method delete_all()
 	method drop()
 ```
-```py
+```
 class Sort:
 	method by_asc(key)
 	method by_desc(key)
