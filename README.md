@@ -16,6 +16,7 @@ Represents a client connection that connects to the database.
 
 - #### `method` insert_col(name)
 Inserts a collection into the database. Requires one parameter, `name` of the collection to be created.
+
 For example,
 ```py
 >>> col = client.insert_col("collection_name")
@@ -23,6 +24,7 @@ For example,
 
 - #### `method` get_col(col)
 Fetches the collection from the database. Requires one parameter, `name` of the collection to be fetched.
+
 For example,
 ```py
 >>> col = client.get_col("collection_name")
@@ -33,12 +35,14 @@ Represents a client connection that connects to the database.
  
 - #### `method` insert_one(doc)
 Inserts a document into the collection. Requires `doc` parameter as the document to be inserted.
+
 ```py
 >>> col.insert_one({"_id":1234, "somekey":"somevalue"})
 ```
 
 - #### `method` insert_many(docs)
 Inserts multiple documents into the collection.
+
 For example,
 ```py
 >>> col.insert_many([
@@ -52,7 +56,9 @@ For example,
 
 - #### `method`update_one(query, docs)
 Updates a document. Requires 2 parameters, `query` and `docs`
+
 Incase of multiple documents satisfying the query, only the first document is updated.
+
 For example,
 ```py
 >>> col.update_one({"_id":1}, {"somevalue1":"newvalue"})
@@ -60,6 +66,7 @@ For example,
 
 - #### `method`update_all(docs)
 Updates every document in a collection. Requires 1 parameters `docs`
+
 For example
 ```py
 >>> col.update_all({"newkey":"somenewvalue"})
@@ -67,7 +74,9 @@ For example
 
 - #### `method`update_many(query, docs)
 Updates multiple document. Requires 2 parameters, `query` and `docs`
+
 Incase of multiple documents satisfying the query, all the documents are updated.
+
 For example,
 ```py
 >>> col.update_many({"newkey":"somenewvalue"}, {"newkey":"anothernewvalue"})
