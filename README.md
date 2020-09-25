@@ -7,37 +7,37 @@ Check [tests](https://github.com/4041RebL/FrickDB/tree/master/tests) for example
 - For Linux and Mac, use `python3 -m pip install -U FrickDB` to install the package.
 - On windows, use `py -3 -m pip install -U FrickDB` to install the package.
 
-## `class` Client:
+### `class` Client:
 Represents a client connection that connects to the database.
 ```py
 >>> import FrickDB
 >>> client = FrickDB.Client()
 ```
 
-- ### `method` insert_col(name)
+- #### `method` insert_col(name)
 Inserts a collection into the database. Requires one parameter, `name` of the collection to be created.
 For example,
 ```py
 >>> col = client.insert_col("collection_name")
 ```
 
-- ### `method` get_col(col)
+- #### `method` get_col(col)
 Fetches the collection from the database. Requires one parameter, `name` of the collection to be fetched.
 For example,
 ```py
 >>> col = client.get_col("collection_name")
 ```
 
-## `class` Col:
+### `class` Col:
 Represents a client connection that connects to the database.
  
-- ### `method` insert_one(doc)
+- #### `method` insert_one(doc)
 Inserts a document into the collection. Requires `doc` parameter as the document to be inserted.
 ```py
 >>> col.insert_one({"_id":1234, "somekey":"somevalue"})
 ```
 
-- ### `method` insert_many(docs)
+- #### `method` insert_many(docs)
 Inserts multiple documents into the collection.
 For example,
 ```py
@@ -50,7 +50,7 @@ For example,
 ])
 ```
 
-- ### `method`update_one(query, docs)
+- #### `method`update_one(query, docs)
 Updates a document. Requires 2 parameters, `query` and `docs`
 Incase of multiple documents satisfying the query, only the first document is updated.
 For example,
@@ -58,14 +58,14 @@ For example,
 >>> col.update_one({"_id":1}, {"somevalue1":"newvalue"})
 ```
 
-- ### `method`update_all(docs)
+- #### `method`update_all(docs)
 Updates every document in a collection. Requires 1 parameters `docs`
 For example
 ```py
 >>> col.update_all({"newkey":"somenewvalue"})
 ```
 
-- ### `method`update_many(query, docs)
+- #### `method`update_many(query, docs)
 Updates multiple document. Requires 2 parameters, `query` and `docs`
 Incase of multiple documents satisfying the query, all the documents are updated.
 For example,
