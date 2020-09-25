@@ -75,16 +75,16 @@ For example,
 
 # Unfinished
 ```py
-	def find_all()
-	def find_many(query)
-	def find_one(query)
-	def delete_one(query)
-	def delete_many(query)
-	def delete_all()
-	def drop()
+	method find_all()
+	method find_many(query)
+	method find_one(query)
+	method delete_one(query)
+	method delete_many(query)
+	method delete_all()
+	method drop()
 ```
 ```py
 class Sort:
-	def by_asc(key)
-	def by_desc(key)
+	method by_asc(key)
+	method by_desc(key)
 ```
