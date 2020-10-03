@@ -133,7 +133,7 @@ For example,
 >>> col.drop()
 ```
 
-### `class` Sort():
+### `class` Sort(list(dict)):
 
 
 - #### `method` by_asc(key)
