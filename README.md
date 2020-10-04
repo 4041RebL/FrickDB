@@ -100,7 +100,7 @@ Deletes one document in a collection.
 Incase there are more than one document that satisfies the query, only the first document is deleted.
 For example,
 ```py
->>> col.find_one({"_id":1})
+>>> col.delete_one({"_id":1})
 ```
 
 - #### `method` delete_many(query)
@@ -108,14 +108,14 @@ Deletes multiple documents in a collection.
 Incase there are more than one document that satisfies the query, all the document are deleted.
 For example,
 ```py
->>> col.find_many({"newkey":"anothernewvalue"})
+>>> col.delete_many({"newkey":"anothernewvalue"})
 ```
 
 - #### `method` delete_all()
 Deletes all the documents in a collection.
 For example,
 ```py
->>> col.find_all()
+>>> col.delete_all()
 ```
 
 - #### `method` drop()
