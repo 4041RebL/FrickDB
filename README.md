@@ -17,7 +17,8 @@ Represents a client connection that connects to the database.
 - #### `method` get_col(col)
 Fetches the collection from the database. Requires one parameter, `name` of the collection to be fetched.
 Incase if the collection doesn't exist, it is created automatically.
-Return type: [Col()]()
+Return type: [Col()](https://github.com/4041RebL/FrickDB#class-col)
+
 For example,
 ```py
 >>> col = client.get_col("collection_name")
