@@ -14,17 +14,9 @@ Represents a client connection that connects to the database.
 >>> import FrickDB
 >>> client = FrickDB.Client()
 ```
-
-- #### `method` insert_col(name)
-Inserts a collection into the database. Requires one parameter, `name` of the collection to be created.
-Return type: [Col()]()
-For example,
-```py
->>> col = client.insert_col("collection_name")
-```
-
 - #### `method` get_col(col)
 Fetches the collection from the database. Requires one parameter, `name` of the collection to be fetched.
+Incase if the collection doesn't exist, it is created automatically.
 Return type: [Col()]()
 For example,
 ```py
