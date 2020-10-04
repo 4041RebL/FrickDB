@@ -5,7 +5,7 @@ import FrickDB
 client = FrickDB.Client()
 
 # Insert a collection.
-col = client.insert_col("new_collection")
+col = client.get_col("new_collection")
 
 # Insert a document.
 col.insert_one({"_id":"single_insert" ,"address":"test one"})
